@@ -1,4 +1,4 @@
-# Framework CPU Manager
+# Framework Core Manager
 Disables P-Cores in linux for 12th gen framework laptops while on battery.
 
 ## Features
