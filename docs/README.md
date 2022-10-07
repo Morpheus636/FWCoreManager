@@ -1,37 +1,26 @@
-# Project Name
-
-<Description>
+# Framework CPU Manager
+Disables P-Cores in linux for 12th gen framework laptops while on battery.
 
 ## Features
-- a feature
-- another feature
-- a third feature
+- Improved Battery Life
+- Easy Setup
 
 ## Technologies
-- language
-- library
-- another library
+TODO - List of technologies
 
 ## Usage
-<Usage Instructions>
+TODO - Usage Instructions
 
 ## Contact
-<Remove this section for unmaintained projects>
 To submit a bug report or feature request, please open a GitHub Issue in this repository. 
 
 To ask a question or get support, you can join my [Discord Server](https://discord.morpheus636.com) or create a Discussions thread within this repository.
 
 ## Contributing
-EITHER:
-
 This project is maintained my Morpheus636. Contribution guidelines for all of my projects can be found at https://docs.morpheus636.com/contributing
-OR:
-
-This project is unmaintained, developed for my personal use and released for the benefit of anyone interested. Issues may not be addressed and pull
-requests will likely be closed without merging.
 
 ## Credits
-
+Thanks to [ngxson](https://github.com/ngxson/hobby-framework-battery) for the idea! I decided to impliment it differently but their version is great, too.
 
 ## Copyright Notice
 © Copyright 2022 Josh Levin ([Morpheus636](https://github.com/morpheus636))
