@@ -2,11 +2,22 @@
 #define FWCOREMANAGER_COREMGR_data_utils_H_
 
 #include <string>
-#include <list>
+#include <vector>
 
 namespace data_utils {
 
-// Private function.
+// Removes whitespace from the beginning of `string`
+std::string string_ltrim(const std::string &s);
+
+
+// Removes whitespace from the end of `string`
+std::string string_rtrim(const std::string &s);
+
+
+// Removes whitespace from each side of `string`
+std::string string_trim(const std::string &s);
+
+
 // Iterates over the contents of `file_path` line-by-line until it finds a line
 // containing the substring `substring`. Returns the entire line.
 //
@@ -16,8 +27,8 @@ namespace data_utils {
 std::string FindLine(std::string file_path, std::string substring);
 
 
-// Splits the `original_string` on the `delimiter` and returns them in a list.
-std::list<std::string> SplitString(std::string original_string, std::string delimiter);
+// Splits the `original_string` on the `delimiter` and returns them in a vector.
+std::vector<std::string> SplitString(std::string original_string, std::string delimiter);
 
 
 } // namespace data_utils
