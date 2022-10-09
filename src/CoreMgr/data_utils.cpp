@@ -48,9 +48,20 @@ std::string FindLine(std::string file_path, std::string substring) {
 
 // Public function.
 std::vector<std::string> StringSplit(std::string original_string, std::string delimiter) {
-  std::vector<std::string> split_strings;
-  // TODO - Write split_string function
-  return split_strings;
+  std::vector<std::string> split_string;
+  if (!original_string.empty()) {
+    std::string::size_type start = 0;
+      do {
+        size_t x = original_string.find(delimiter, start);
+        if (x == std::string::npos) 
+          break;
+        split_string.push_back(original_string.substr(start, x-start));
+        start += delimiter.size();
+      }
+      while (true);
+        split_string.push_back(original_string.substr(start));            
+    }
+    return split_string;
 }
 
 
