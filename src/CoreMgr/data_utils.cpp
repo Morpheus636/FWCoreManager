@@ -8,25 +8,25 @@ const std::string WHITESPACE = " \n\r\t\f\v";
 
 
 // Public Function
-std::string string_ltrim(const std::string &s) {
+std::string StringLTrim(const std::string &s) {
     size_t start = s.find_first_not_of(WHITESPACE);
     return (start == std::string::npos) ? "" : s.substr(start);
 }
 
 
 // Public Function
-std::string string_rtrim(const std::string &s) {
+std::string StringRTrim(const std::string &s) {
     size_t end = s.find_last_not_of(WHITESPACE);
     return (end == std::string::npos) ? "" : s.substr(0, end + 1);
 }
 
 
 // Public Function
-std::string string_trim(const std::string &s) {
-    return string_rtrim(string_ltrim(s));
+std::string StringTrim(const std::string &s) {
+    return StringRTrim(StringLTrim(s));
 }
 
- 
+
 // Public function.
 std::string FindLine(std::string file_path, std::string substring) {
     // Open the file as an input string.
@@ -47,7 +47,7 @@ std::string FindLine(std::string file_path, std::string substring) {
 
 
 // Public function.
-std::vector<std::string> SplitString(std::string original_string, std::string delimiter) {
+std::vector<std::string> StringSplit(std::string original_string, std::string delimiter) {
     std::vector<std::string> split_strings;
     // TODO - Write split_string function
     return split_strings;

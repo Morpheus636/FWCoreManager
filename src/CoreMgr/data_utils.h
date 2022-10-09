@@ -7,15 +7,15 @@
 namespace data_utils {
 
 // Removes whitespace from the beginning of `string`
-std::string string_ltrim(const std::string &s);
+std::string StringLTrim(const std::string &s);
 
 
 // Removes whitespace from the end of `string`
-std::string string_rtrim(const std::string &s);
+std::string StringRTrim(const std::string &s);
 
 
 // Removes whitespace from each side of `string`
-std::string string_trim(const std::string &s);
+std::string StringTrim(const std::string &s);
 
 
 // Iterates over the contents of `file_path` line-by-line until it finds a line
@@ -28,7 +28,7 @@ std::string FindLine(std::string file_path, std::string substring);
 
 
 // Splits the `original_string` on the `delimiter` and returns them in a vector.
-std::vector<std::string> SplitString(std::string original_string, std::string delimiter);
+std::vector<std::string> StringSplit(std::string original_string, std::string delimiter);
 
 
 } // namespace data_utils
