@@ -6,10 +6,13 @@ Disables P-Cores in linux for 12th gen framework laptops while on battery.
 - Easy Setup
 
 ## Technologies
-TODO - List of technologies
+- Linux Kernel (via `/proc/cpuinfo`)
+- C++
 
 ## Usage
-TODO - Usage Instructions
+### Supported CPUs:
+- Core i7-1260p
+- More coming soon!
 
 ## Contact
 To submit a bug report or feature request, please open a GitHub Issue in this repository. 
