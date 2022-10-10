@@ -69,16 +69,18 @@ void CPU::SetPCores(bool status) {
 }
 
 // Public Function
-CPU DetectCPU() {
-  // Dict of CPU versions.
-  // FIXME - This causes header errors
-  std::map<std::string, CPU> supported_cpus;
-  supported_cpus["12th Gen Intel(R) Core(TM) i7-1260P"] = CPU("12th Gen Intel(R) Core(TM) i7-1260P", {0,1,2,3,4,5,6,7,8}, {9,10,11,12,13,14,15});
+CPU* DetectCPU() {
+  // CPU objects for each CPU.
+  CPU i7_1260p = CPU("12th Gen Intel(R) Core(TM) i7-1260P", {}, {});
+  // Map of Model Names and pointers to the above CPU objects.
+  std::map<std::string, CPU*> supported_cpus = {
+    {"12th Gen Intel(R) Core(TM) i7-1260P", &i7_1260p}
+  };
 
   // Load model name value from cpuinfo.
   std::vector<std::string> model_name_line = data_utils::StringSplit(data_utils::FindLine("/proc/cpuinfo", "model name"), ": ");
   // Return the CPU object from `supported_cpus` based on the model name.
-  CPU processor = supported_cpus[model_name_line.at(1)];
+  CPU* processor = supported_cpus[model_name_line.at(1)];
   return processor;
 }
 } // namespace cpus

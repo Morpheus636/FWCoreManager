@@ -44,7 +44,7 @@ class CPU {
 
 // Uses /proc/cpuinfo to determine the CPU of the system.
 // Returns a corresponding instance of the CPU class.
-CPU DetectCPU();
+CPU* DetectCPU();
 
 } // namespace cpus
 #endif
