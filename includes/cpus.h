@@ -1,5 +1,5 @@
-#ifndef FWCOREMANAGER_COREMGR_CPUS_H_
-#define FWCOREMANAGER_COREMGR_CPUS_H_
+#ifndef FWCOREMANAGER_INCLUDES_CPUS_H_
+#define FWCOREMANAGER_INCLUDES_CPUS_H_
 
 #include <list>
 #include <string>
