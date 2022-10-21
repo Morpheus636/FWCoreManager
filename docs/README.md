@@ -23,7 +23,8 @@ To ask a question or get support, you can join my [Discord Server](https://disco
 This project is maintained my Morpheus636. Contribution guidelines for all of my projects can be found at https://docs.morpheus636.com/contributing
 
 ## Credits
-Thanks to [ngxson](https://github.com/ngxson/hobby-framework-battery) for the idea! I decided to impliment it differently but their version is great, too.
+- Thanks to [ngxson](https://github.com/ngxson/hobby-framework-battery) for the idea! I decided to impliment it differently but their version is great, too.
+- This project uses [The Lean Mean C++ Option Parser](https://optionparser.sourceforge.net) for CLI parsing.
 
 ## Copyright Notice
 © Copyright 2022 Josh Levin ([Morpheus636](https://github.com/morpheus636))
